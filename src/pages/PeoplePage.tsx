@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { Loader } from '../components/Loader';
 import { Person } from '../types/Person';
 import { getPeople } from '../api';
-import { PersonLink } from '../pages/PersonLink';
+import { PersonLink } from './PersonLink';
 
 export const PeoplePage: React.FC = () => {
   const [currentPeople, setCurrentPeople] = useState<Person[]>([]);
